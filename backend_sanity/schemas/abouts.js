@@ -21,6 +21,14 @@ export default{
               hotspot: true,
             },
         },
+        {
+            name:'imgUrltwo',
+            title:'ImgUrltwo',
+            type: 'image',
+            options: {
+              hotspot: true,
+            },
+        },
         
     ]
 }
