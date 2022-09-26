@@ -1,0 +1,201 @@
+//This is for the whole page, we gave this ID to the div at the top
+#home {
+    //This is always needed up there when you have an Image
+    position: relative;
+    background: url(../../assets/bgIMG.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    
+    .app_wrapper {
+        padding: 0;
+    }
+        
+    .copyright {
+        display: none;
+    }
+}
+
+.app__header {
+    // This is to always have our hero to take the full space of the screen
+    // The flex direction is needed to change with phone
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    // The padding is needed here for the navbar
+    padding: 8rem 0rem 0;
+    //This is for incredible large devices 
+    @media screen and (min-width: 2000px) {
+        padding-top: 8rem;
+    }
+    // This change the flex direction for iphone and small devices screens
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+    }
+    // This is only for phones
+    @media screen and (max-width: 450px) {
+        padding: 6rem 1rem 2rem;
+    }
+}
+
+.app__header-info {
+    // We want this to take 65% of the screen
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+
+    margin: 0 2rem;
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+        margin-left: 0rem;
+    }
+}
+
+.app__header-badge {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    // We are here changing 2 tags at the same time
+    .badge-cmp {
+        padding: 1rem 2rem;
+        border: var(--white-color);
+        border-radius: 15px;
+        flex-direction: row;
+        width: 200px;
+        // To get that over effect :
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    }
+    
+    .tag-cmp {
+        padding: 1rem 2rem;
+        border: var(--white-color);
+        border-radius: 15px;
+        flex-direction: row;
+        width: auto;
+        // To get that over effect :
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        
+        flex-direction: column;
+        margin-top: 3rem;
+
+        p {
+            width: 100%;
+            text-transform: uppercase ;
+            text-align: right;
+        }
+    }
+    // For small screens and small devices the boxes will appear on the left
+    @media screen and (max-width: 1200px){
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.app__header-circle {
+    flex: 0.75;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 100%;
+    margin-left: 1rem;  
+
+    div {
+        width: 100px; //defines the size of the round box
+        height: 100px;
+        border-radius: 50%;
+    
+        background: var(--white-color);
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    
+        img {
+          width: 70%;
+          height: 70%;
+        }
+     }
+
+    div:nth-child(1){ //this is targeting the first child index
+        width: 100px;
+        height: 100px;
+    }
+
+    div:nth-child(2){ //this is targeting the 2nd child index
+        margin: 1.75rem;
+        width: 150px;
+        height: 150px;
+    }
+
+    div:nth-child(3){ //this is targeting the 3rd child index
+        margin: 1rem;
+        width: 70px;
+        height: 70px;
+    }
+    
+    //This is for huge screens 
+    @media screen and (min-width: 2000px) { 
+        div:nth-child(1) {
+            width: 200px;
+            height: 200px;
+          }
+        
+        div:nth-child(2) {
+          width: 400px;
+          height: 400px;
+        }
+
+        div:nth-child(3) {
+            width: 170px;
+            height: 170px;
+          }
+      }
+      //This is for devices under 1200px, so small screens and phones aswell
+      @media screen and (max-width: 1200px) {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0;
+    
+        div {
+          margin: 1rem;
+        }
+    }
+}
+
+.app__header-img {
+    flex: 1;
+    height: 100%;
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+
+    img {
+        width: 100%;
+        z-index: 1;
+        object-fit: contain;
+    }
+    
+    .overlay_circle {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+        height: 90%;
+      }
+    
+      @media screen and (max-width: 1200px) {
+        margin: 2rem 0;
+      }
+
+  }
