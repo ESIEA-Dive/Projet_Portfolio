@@ -49,15 +49,16 @@ const Header = () => {
       >
         <div className='app__header-badge'>
           <div className='badge-cmp app__flex'>
-            <span style={{ fontSize: 20}}>👋</span>
+            <span style={{ fontSize: 30}}>👋</span>
             <div style={{ marginLeft: 10}}>
-              <p className='p-text'>Hello , I am</p>
+              <p className='p-text' style={{ width: 150}}>Hello , I am</p>
               <span style={{ whiteSpace: 'pre' }} ref={el} />
+              {/* Maybe add colors style={{color: '#01B399' }} */}
             </div>
           </div>
 
           <div className='tag-cmp app__flex'>
-            <p className='p-text'>Web Developer</p>
+            <p className='p-text' >Web Developer</p>
             <p className='p-text'>Master's at ESIEA</p>
           </div>
        
