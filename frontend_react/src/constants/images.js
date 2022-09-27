@@ -19,12 +19,12 @@ import about02 from '../assets/about02.jpg';
 import about03 from '../assets/about03.jpg';
 import about04 from '../assets/about04.jpg';
 
+import greencard from '../assets/greencard.svg'
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
 
 import hopwecare from '../assets/hopwecare.png';
 import contact from '../assets/contact.jpg';
-import greencard from '../assets/greencard.png';
 
 
 const imgs = {
@@ -47,11 +47,11 @@ const imgs = {
   about02,
   about03,
   about04,
+  greencard,
   circle,
   logo,
   hopwecare,
   contact,
-  greencard,
 };
 
 export default imgs;

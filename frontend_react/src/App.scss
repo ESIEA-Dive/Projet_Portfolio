@@ -97,6 +97,15 @@
     }
   }
   
+  .app__card {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+
+    padding-bottom: 1rem;
+  }
+
   .app__social {
     display: flex;
     justify-content: flex-end;
@@ -120,8 +129,8 @@
       transition: all 0.3s ease-in-out;
   
       svg {
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         color: var(--gray-color);
       }
   
