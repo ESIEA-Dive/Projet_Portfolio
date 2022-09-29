@@ -53,8 +53,7 @@ const Header = () => {
             <span style={{ fontSize: 30}}>👋</span>
             <div style={{ marginLeft: 10}}>
               <p className='p-text' style={{ width: 150}}>Hello , I am</p>
-              <span style={{ whiteSpace: 'pre' }} ref={el} />
-              {/* Maybe add colors style={{color: '#01B399' }} */}
+              <span style={{ whiteSpace: 'pre', color: '#01B399' }} ref={el} />
             </div>
           </div>
 

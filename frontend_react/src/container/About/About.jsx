@@ -5,7 +5,7 @@ import { AppWrap, MotionWrap } from '../../wrapper';
 import './About.scss';
 import { urlFor, client } from '../../client';
 
-// The old way Stati :( -const abouts = [
+// The old way Static :( -const abouts = [
 //   { title: 'Web Devlopment', description: 'I am a good webDev', imgUrl: images.about01 },
 //   { title: 'Web Design', description: 'I am a good webDev', imgUrl: images.about02 },
 //   { title: 'UI/UX', description: 'I am a good webDev', imgUrl: images.about03 },
