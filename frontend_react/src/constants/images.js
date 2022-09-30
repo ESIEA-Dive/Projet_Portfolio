@@ -22,9 +22,13 @@ import about04 from '../assets/about04.jpg';
 import greencard from '../assets/greencard.svg'
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
+import codeur from '../assets/codeur.png';
 
 import hopwecare from '../assets/hopwecare.png';
-import contact from '../assets/contact.jpg';
+import contact from '../assets/contact.png';
+import question from '../assets/question.png';
+
+import adiveCV from '../assets/adiveCV.pdf';
 
 
 const imgs = {
@@ -50,8 +54,11 @@ const imgs = {
   greencard,
   circle,
   logo,
+  codeur,
   hopwecare,
   contact,
+  question,
+  adiveCV, 
 };
 
 export default imgs;

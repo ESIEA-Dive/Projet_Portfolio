@@ -20,15 +20,18 @@ const Navbar = () => {
             <a href={`#${item}`}>{item}</a>
             <div />
           </li>
-        ))}
+        ))} 
       </ul>
+      <div className ='app__navbar-resume'>
+        <a href={images.adiveCV} download='true' >Resume / CV</a>
+      </div>
 
       <div className='app__navbar-menu'>
         <HiMenuAlt4 onClick={() => setToggle(true)}/>
 
         {toggle && (
             <motion.div
-              whileInView={{ x: [300, 0] }}
+              whileInView={{ x: [200, 0] }}
               transition={{ duration : 1, ease : 'easeOut' }}
             >
               <HiX onClick={() => setToggle(false)} />

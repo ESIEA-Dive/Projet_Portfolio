@@ -39,7 +39,7 @@ const Work = () => {
   return (
     <>
       <motion.h2
-      whileInView={{ x:[ -100, 50, 0 ], opacity:[ 0, 0.2, 1 ] }}
+      whileInView={{ x:[ -100, -50, 0 ], opacity:[ 0, 0, 1 ] }}
       transition={{ duration: 1 }}
       className="head-text">My <span>work</span><br /> & personal <span>Projects</span></motion.h2>
 
@@ -54,9 +54,9 @@ const Work = () => {
           </div>
         ))}
       </div>
-
+      
       <motion.div
-        whileInView={{ x:[ 100, -50, 0 ], opacity:[ 0, 0.2, 1 ] }}
+        whileInView={{ y:[ 100, 50, 0 ], opacity:[ 0, 0, 1 ] }}
         animate={animateCard}
         transition={{ duration: 1, delayChildren: 0.5 }}
         className="app__work-portfolio"
