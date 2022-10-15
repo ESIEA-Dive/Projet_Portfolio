@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
-import { AppWrap } from '../../wrapper';
+import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 import './Work.scss';
 
@@ -38,13 +38,10 @@ const Work = () => {
 
   return (
     <>
-      <motion.h2
-      whileInView={{ x:[ -100, -50, 0 ], opacity:[ 0, 0, 1 ] }}
-      transition={{ duration: 1 }}
-      className="head-text">My <span>work</span><br /> & personal <span>Projects</span></motion.h2>
+      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+        {['WordPress', 'Php', 'Java', 'React JS', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -54,11 +51,10 @@ const Work = () => {
           </div>
         ))}
       </div>
-      
+
       <motion.div
-        whileInView={{ y:[ 100, 50, 0 ], opacity:[ 0, 0, 1 ] }}
         animate={animateCard}
-        transition={{ duration: 1, delayChildren: 0.5 }}
+        transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
       >
         {filterWork.map((work, index) => (
@@ -112,4 +108,8 @@ const Work = () => {
   );
 };
 
-export default AppWrap(Work, 'work');
+export default AppWrap(
+  MotionWrap(Work, 'app__works'),
+  'work',
+  'app__primarybg',
+);

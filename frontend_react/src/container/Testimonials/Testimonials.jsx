@@ -30,10 +30,6 @@ const Testimonials = () => {
 
   return (
     <>
-    <motion.h2
-      whileInView={{ x:[ -100, -50, 0 ], opacity:[ 0, 0, 1 ] }}
-      transition={{ duration: 1 }}
-      className="head-text"> <span>Testimonials</span></motion.h2>
       {testimonials.length && (
         <>
           <div className="app__testimonial-item">
