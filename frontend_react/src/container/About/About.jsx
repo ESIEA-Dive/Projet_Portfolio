@@ -27,7 +27,7 @@ const About = () => {
   return (
     <>
       <h2 className='head-text'>
-        Here his a few <span>things</span><br /> <span>about me</span>
+        A few things<br /> <span>about me</span>
       </h2>
 
       <div className='app__profiles'>

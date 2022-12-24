@@ -23,7 +23,8 @@ const Navbar = () => {
         ))} 
       </ul>
       <div className ='app__navbar-resume'>
-        <a href={images.adiveCV} download='true' >Resume / CV</a>
+        <a href={images.adiveCV} 
+        download='AlexandreDive_CV' >Resume / CV</a>
       </div>
 
       <div className='app__navbar-menu'>
