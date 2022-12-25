@@ -27,7 +27,7 @@ const Header = () => {
       strings: [
         'Alexandre Dive',
         'a Software Engineer',
-        'fond of React'
+        'eager to learn'
       ],
       typeSpeed: 75,
       backSpeed: 75,
@@ -78,7 +78,7 @@ const Header = () => {
       whileInView={scaleVariants.whileInView}
       className="app__header-circle"
       >
-        {[images.javascript, images.react, images.sanity].map((circle, index) => (
+        {[images.typescript, images.react, images.angular].map((circle, index) => (
           <div className='circle-cmp app__flex' key={`circle-${index}`}>
             <img src={circle} alt='profile_bg'/>
           </div>

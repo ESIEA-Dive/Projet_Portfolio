@@ -5,14 +5,14 @@ import css from '../assets/css.png';
 import figma from '../assets/figma.png';
 import git from '../assets/git.png';
 import html from '../assets/html.png';
-import javascript from '../assets/javascript.png';
+import typescript from '../assets/typescript.png';
 import mu5 from '../assets/mu5.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
 import react from '../assets/react.png';
 import sass from '../assets/sass.png';
 import vue from '../assets/vue.png';
-import sanity from '../assets/sanity.webp';
+import angular from '../assets/angular.png';
 
 import about01 from '../assets/about01.jpg';
 import about02 from '../assets/about02.jpg';
@@ -39,14 +39,14 @@ const imgs = {
   figma,
   git,
   html,
-  javascript,
+  typescript,
   mu5,
   node,
   python,
   react,
   sass,
   vue,
-  sanity,
+  angular,
   about01,
   about02,
   about03,
